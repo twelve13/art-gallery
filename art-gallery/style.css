@@ -133,9 +133,23 @@ ul {
   width: 750px;
 }
 
-#painting1 {
+#painting1, #painting6, #painting9 {
   background-image: url("images/frame1.png");
 }
+
+#painting2, #painting5, #painting11 {
+  background-image: url("images/frame4.png");
+}
+
+#painting3, #painting8, #painting12 {
+  background-image: url("images/frame2.png");
+}
+
+#painting4, #painting7, #painting10 {
+  background-image: url("images/frame3.png");
+}
+
+
 
 .item-info {
   align-items: center;

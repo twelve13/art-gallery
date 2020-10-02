@@ -11,18 +11,55 @@
   <h1>CC Art Gallery</h1>
   <div class="app">
     <ul class="hs full">
-      <li class="item"><div class="painting" id="painting1" data-toggle="modal" data-target="#myModal1"></div><div class="item-info" data-toggle="modal" data-target="#myModal2">Name painting 1</div></li>
-      <li class="item"><div class="painting" id="painting2"></div><div class="info">info about painting 2</div></li>
-      <li class="item"><div class="painting" id="painting3"></div><div class="info">info about painting 3</div></li>
-      <li class="item"><div class="painting" id="painting4"></div><div class="info">info about painting 4</div></li>
-      <li class="item"><div class="painting" id="painting5"></div><div class="info">info about painting 5</div></li>
-      <li class="item"><div class="painting" id="painting6"></div><div class="info">info about painting 6</div></li>
-      <li class="item"><div class="painting" id="painting7"></div><div class="info">info about painting 7</div></li>
-      <li class="item"><div class="painting" id="painting8"></div><div class="info">info about painting 8</div></li>
-      <li class="item"><div class="painting" id="painting9"></div><div class="info">info about painting 9</div></li>
-      <li class="item"><div class="painting" id="painting10"></div><div class="info">info about painting 10</div></li>
-      <li class="item"><div class="painting" id="painting11"></div><div class="info">info about painting 11</div></li>
-      <li class="item"><div class="painting" id="painting12"></div><div class="info">info about painting 12</div></li>
+      <li class="item">
+        <div class="painting" id="painting1" data-toggle="modal" data-target="#modal1-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal1-info">Name painting 1</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting2" data-toggle="modal" data-target="#modal2-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal2-info">Name painting 2</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting3" data-toggle="modal" data-target="#modal3-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal3-info">Name painting 3</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting4" data-toggle="modal" data-target="#modal4-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal4-info">Name painting 4</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting5" data-toggle="modal" data-target="#modal5-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal5-info">Name painting 5</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting6" data-toggle="modal" data-target="#modal6-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal6-info">Name painting 6</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting7" data-toggle="modal" data-target="#modal7-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal7-info">Name painting 7</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting8" data-toggle="modal" data-target="#modal8-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal8-info">Name painting 8</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting9" data-toggle="modal" data-target="#modal9-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal9-info">Name painting 9</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting10" data-toggle="modal" data-target="#modal10-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal10-info">Name painting 10</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting11" data-toggle="modal" data-target="#modal11-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal11-info">Name painting 11</div>
+      </li>
+      <li class="item">
+        <div class="painting" id="painting12" data-toggle="modal" data-target="#modal12-painting"></div>
+        <div class="item-info" data-toggle="modal" data-target="#modal12-info">Name painting 12</div>
+      </li>
+   
   </ul>
   
   <div id="art-collector" class="container">
@@ -33,44 +70,7 @@
   </div>
 </div>
 
-  <div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <img class="painting-enlarged" src="images/frame1.png" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-          <p>Link to the code etc</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="modals"></div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
