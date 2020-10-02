@@ -128,16 +128,32 @@ ul {
   width: 300px;
 }
 
+.painting-enlarged {
+  height: 800px;
+  width: 750px;
+}
+
 #painting1 {
   background-image: url("images/frame1.png");
 }
 
-.info {
+.item-info {
+  align-items: center;
   background-image: url("images/placard.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 150px;
-  width: 100px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 20px;
+  height: 170px;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.modal-content {
+  width: 800px;
 }
 
 
