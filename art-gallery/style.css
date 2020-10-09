@@ -43,10 +43,11 @@ ul {
   grid-column: 1 / -1;
 }
 
+/*need to manually enter number of paintings here*/
 .hs {
   display: grid;
   grid-gap: calc(var(--gutter) / 2);
-  grid-template-columns: 10px repeat(12, calc(40% - var(--gutter) * 2)) 10px;
+  grid-template-columns: 10px repeat(17, calc(40% - var(--gutter) * 2)) 10px;
   grid-template-rows: minmax(150px, 1fr);
   height: 400px;
   overflow-x: scroll;
@@ -122,33 +123,50 @@ ul {
 }
 
 .painting {
+  align-items: center;
+  background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 350px;
-  width: 300px;
+  cursor: pointer;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 350px;
 }
 
 .painting-enlarged {
-  height: 800px;
+  height: 600px;
   width: 750px;
 }
 
-#painting1, #painting6, #painting9 {
-  background-image: url("images/frame1.png");
+.painting-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 230px;
+  width: 260px;
 }
 
-#painting2, #painting5, #painting11 {
-  background-image: url("images/frame4.png");
+.painting-content img {
+  height: 98%;
+  width: 97%;
 }
 
-#painting3, #painting8, #painting12 {
-  background-image: url("images/frame2.png");
+#painting1, #painting6, #painting9, #painting13, #painting16 {
+  background-image: url("images/frame1h.png");
 }
 
-#painting4, #painting7, #painting10 {
-  background-image: url("images/frame3.png");
+#painting2, #painting5, #painting11, #painting15 {
+  background-image: url("images/frame4h.png");
 }
 
+#painting3, #painting8, #painting12, #painting17 {
+  background-image: url("images/frame2h.png");
+}
+
+#painting4, #painting7, #painting10, #painting14 {
+  background-image: url("images/frame3h.png");
+}
 
 
 .item-info {
@@ -157,6 +175,7 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   font-size: 20px;
   height: 170px;

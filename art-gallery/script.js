@@ -34,29 +34,105 @@ app.addEventListener("mouseup", debounce(stopArtCollector));
 //create the modals
 
 const paintings = [
-	{"image": "images/frame1.png",
-		"title": "name of painting 1",
-		"body": "<p>this is info about painting 1</p> <a href='http://google.com' target='_blank'>this is a link</a>"
+	{
+		"image": "images/utilities.png",
+		"title": "Utilities",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
 	},
-	{"image": "images/frame2.png",
-		"title": "name of painting 2",
-		"body": "info info about painting 2"
-	},
-	{"image": "images/frame3.png",
-		"title": "name of painting 3",
-		"body": "this is info about painting 3"
+	{
+		"image": "images/milk-carton.png",
+		"title": "Milk Carton",
+		"body": "<p>Medium: Pure CSS</p> <p>Milk carton illustration based off a mousepad I found in Taiwan.</p><a href='https://codepen.io/twelve13/full/ewKEXp' target='_blank'>See it in Codepen</a>"
 	},	
-	{"image": "images/frame4.png",
-		"title": "name of painting 4",
-		"body": "4444"
+	{
+		"image": "images/imaginarium.png",
+		"title": "Imaginarium",
+		"body": "<p>Medium: Pure CSS</p> <p>Illustration inspired by <a href='https://i.pinimg.com/736x/57/de/35/57de3579bc5a28f3a2ef3d40c45138a8--illustration-art-terrarium-illustration.jpg' target='_blank'>an image I found online</a>.  </p><a href='https://codepen.io/twelve13/full/ZdaapG' target='_blank'>See it in Codepen</a>"
 	},
-	{"image": "images/frame5.png",
-		"title": "name of painting 5",
-		"body": "this is info about painting 5"
+	{
+		"image": "images/heisenberg.png",
+		"title": "Heisenberg",
+		"body": "<p>Medium: Zdog pseudo-3D engine</p> <p>Experimentation with Zdog, inspired by Breaking Bad.</p><a href='https://codepen.io/twelve13/full/zVVPeM' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/moaning-myrtle.png",
+		"title": "Do Your Thing, Moaning Myrtle",
+		"body": "<p>Medium: Pure CSS</p> <p>Inspired by Harry Potter, <a href='https://www.pinterest.com/pin/750482725379966165/' target='_blank'>kirakiradoodles</a>, and water efficient dual-flush toilets everywhere.</p><a href='https://codepen.io/twelve13/full/wvvjGRJ' target='_blank'>See it in action in Codepen</a>"
+	},
+	{
+		"image": "images/bobs-burgers.png",
+		"title": "Bob's Burgers",
+		"body": "<p>Medium: Pure CSS</p> <p>Pixel art inspired by closing credits of the episode 'Burgerboss'.</p><a href='https://codepen.io/twelve13/full/VJgxEV' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/travelling-cart.png",
+		"title": "Travelling Cart",
+		"body": "<p>Medium: Three.js</p> <p>3D Travelling Cart from Stardew Valley.</p><a href='https://codepen.io/twelve13/full/BaogXvv' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/roomba-cat.png",
+		"title": "Captain of the USS Roomba",
+		"body": "<p>Medium: CSS, GSAP</p> <p>Experimentation with GSAP, inspired by cat goals.</p><a href='https://codepen.io/twelve13/full/PoZWYKy' target='_blank'>See it in action in Codepen</a>"
+	},
+	{"image": "images/snowglobe.png",
+		"title": "Snowglobe",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},	
+	{
+		"image": "images/marauders-map.png",
+		"title": "Marauder's Map",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/stamp.png",
+		"title": "Scenic Stamp",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/pizza-cat.png",
+		"title": "Pizza Cat",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/babycakes.png",
+		"title": "Babycakes",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/beanbody.png",
+		"title": "Mrs. Beanbody",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/donut.png",
+		"title": "Donut",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/hellcat.jpeg",
+		"title": "Cat",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
+	},
+	{
+		"image": "images/hugzilla.jpeg",
+		"title": "Hugs",
+		"body": "<p>Medium: Pure CSS</p> <p>3D Utility cards for the Codepen Monoopoly challenge.</p><a href='https://codepen.io/twelve13/full/xxxWGao' target='_blank'>See it in Codepen</a>"
 	}
 ]
 
 for(let i=0; i<paintings.length; i++){
+
+var newItem = document.createElement("li");
+newItem.classList.add("item");
+
+newItem.innerHTML = `
+<div class="painting" id="painting${i+1}" data-toggle="modal" data-target="#modal${i+1}-painting">
+    <div class="painting-content"><img src=${paintings[i].image} alt=${paintings[i].title}/></div>
+</div>
+<div class="item-info" data-toggle="modal" data-target="#modal${i+1}-info">${paintings[i].title}</div>
+`
+
+document.getElementById("paintings-list").appendChild(newItem);
 
 var newModal = document.createElement("div");
 
